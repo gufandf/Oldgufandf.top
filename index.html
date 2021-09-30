@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gufandf.top</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="topbar">
+        <span class="button" id="choose" onclick="buttonClick(this,'home');">首页</span>
+        <span class="button" id="unchoose" onclick="buttonClick(this,'hobby');">爱好</span>
+        <span class="button" id="unchoose" onclick="buttonClick(this,'about');">关于</span>
+        <span class="button" id="unchoose" onclick="buttonClick(this,'puzzle');">解密</span>
+    </div>
+    <div class="body">
+        <!-- 首页 -->
+        <div class="html" id="home" style="display: flex;">
+            <div class="chunk"><p>我是gufandf，这是我在2021年8月18日搭建的网站，网站历经多次修改<s>（和掉头发）</s>，才如你现在所见。差点给我写秃了，特别是不同设备间的适配，写了好几天。但还是有收获的，起码学了点JS。这几天天天写，写完了不满意又重新写，少说也得写了几千行</p>
+            </div>
+            <div class="chunk"><h1>我的坐标</h1><p>总有一天你会在这里找到我</p>
+                <div class="cards" style="display: flex;justify-content: center;align-items: center;flex-wrap: wrap;">
+
+                    <div class="card" style="background-color: #00A0D8;"><a href="https://space.bilibili.com/449104347" target="_blank" rel="noopener noreferrer"><img src="./png/bilibili.png" alt=""></a>
+                    </div>
+
+                    <div class="card" style="background-color: #ff0000;"><a href="https://music.163.com/#/user/home?id=1923366995" target="_blank" rel="noopener noreferrer"><img src="./png/clouldmusic.png" alt=""></a>
+                    </div>
+
+                    <div class="card"><a href="https://steamcommunity.com/profiles/76561199030156700/" target="_blank" rel="noopener noreferrer"><img src="./png/steam.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="block300px"></div>
+        </div>
+        
+        <!-- 爱好 -->
+        <div class="html" id="hobby" style="display: none;">
+            <!-- minecraft -->
+            <div class="chunk" style="background-image: url('https://www.minecraft.net/content/dam/minecraft/home/home-hero-1200x600.jpg');justify-content:start;">
+                <div class="box">
+                    <a href="https://www.minecraft.net/" target="_blank">
+                        <img src="https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/pdp-configuration/game01.jpg" alt="">
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="https://www.minecraft.net/zh-hans/about-dungeons" target="_blank">
+                        <img src="https://www.minecraft.net/content/dam/games/dungeons/key-art/boxart-standardedition.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- dsp -->
+            <div class="chunk" style="background-image: url('https://img01.vgtime.com/web/topic/2020/09/11/2009111459228_u408168.jpg');justify-content: flex-start;">
+                <div class="box">
+                    <a href="https://store.steampowered.com/app/1366540/_/" target="_blank">
+                        <img src="https://wegame.gtimg.com/g.2001516-r.732de/info/e436583e3a6569362fdefb62e1e160cf.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- genshin -->
+            <div class="chunk" style="background-image: url('https://webstatic.mihoyo.com/ys/event/e20210721-fab/images/bg.7864be33.jpg');justify-content: flex-end;">
+                <div class="box">
+                    <a href="https://ys.mihoyo.com/main/" target="_blank">
+                        <img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.bQIXxSgTCw-Gwt6FiP3aoQHaHa?pid=ImgDet&rs=1" alt="" style="width: 20vw;height: 20vw;"> 
+                    </a>
+                </div>
+            </div>
+            <!-- Portal -->
+            <div class="chunk" style="background-image: url('https://tse1-mm.cn.bing.net/th/id/R-C.966a842ef2d19fa996e240fe7fc79b5d?rik=bAQGfJjADQojFw&riu=http%3a%2f%2fi2.hdslb.com%2fbfs%2farchive%2f3cd8fe142c3d76d90bd1384814234b321bd10da6.jpg&ehk=1eBGNvXZ6fBXqccBXmffD3N5m5uLh2c82tkdUyL4%2b40%3d&risl=&pid=ImgRaw&r=0');justify-content: space-between;">
+                <div class="box">
+                    <a href="https://store.steampowered.com/app/400/Portal/" target="_blank">
+                        <img src="https://static.wikia.nocookie.net/half-life/images/9/94/Portal_Steam_library_cover.jpg/revision/latest/scale-to-width-down/333?cb=20191010104231&path-prefix=en" alt="">
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="https://store.steampowered.com/app/620/Portal_2/" target="_blank">
+                        <img src="https://static.wikia.nocookie.net/half-life/images/b/b2/Portal_2_Steam_library_cover.jpg/revision/latest?cb=20191010104232&path-prefix=en" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- phigros -->
+            <div class="chunk" style="background-image: url('https://i0.hdslb.com/bfs/article/009bd54242599a603f1eb92db891f5985d8e293f.jpg@1320w_740h.webp');align-items: flex-end;">
+                <div class="box">
+                    <a href="https://pigeon-games.com/phigros" target="_blank">
+                        <img src="https://pigeon-games.com/img/game_logo_2.png" alt="" style="height: 6vw;width: 20vw;">
+                    </a>
+                </div>
+            </div><div class="block300px"></div>
+        </div>
+        
+        <!-- 关于 -->
+        <div class="html" id="about" style="display: none;">
+            <div class="chunk">
+                <p style="color: #ff0000;">Code by gufandf</p>
+                <p>素材部分来自网络，侵权请联系aa465250060@163.com删除</p>
+            </div>
+            <!-- <div class="chunk">
+                <h1>回声洞</h1></br>
+                <p>保护我的敌人，痛击我的队友！</p></br>
+                <p>我能怎么办呀？我也很绝望呀！</p></br>
+                <p>向鸽者文明致敬！！！</p></br>
+                <p>特别是其搭载690战术核显卡的改进版本，一发就可以摧毁一个航母战斗群。</p></br>
+                <p>或许你并不是不想睡觉，而是周围有怪物在游荡!</p></br>
+                <p>6</p></br>
+                <p>7</p></br>
+                <p>8</p></br>
+            </div> -->
+            <div class="block300px"></div>
+            <div class="block300px"></div>
+        </div>
+        
+        <!-- 解密 -->
+        <div class="html" id="puzzle" style="display: none;">
+            <div class="chunk">
+                <h1>初始线索</h1>
+                <p></p>
+            </div>
+            <div class="block300px"></div>
+            <div class="block300px"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+body{
+    background-color: seashell;
+    perspective: 200px;
+    margin: 0;
+    padding: 0;
+}
+.topbar{
+    position: relative;
+    height: 70px;
+    background-color: #1170D0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: topbar 1s ease-in-out;
+}
+.button{
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    margin: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.button#choose{
+    background-color: white;
+    color: #1170D0;
+}
+.button#unchoose:hover{
+    background-color: rgba(255, 255, 255, 0.308);
+    transition: all 0.3s ease-in-out;
+}
+.body{
+    transform-origin:top;
+    animation: body 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.html{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.chunk{
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: #1171D1 0 0 5px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.chunk{
+    width: 70vw;
+}
+#hobby .chunk{
+    width: 70vw;
+    height: 25vw;
+    background-position: center;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+}
+
+.chunk:hover{
+    box-shadow: #1171D1 0 0 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.body p{
+    margin: 0;
+    font-size: large;
+    color: #1171D1;
+}
+
+
+h1{
+    margin: 0;
+    color: #0e5aa7;
+}
+
+.card{
+    margin: 20px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50px;
+    box-shadow: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.card:hover{
+    transform: rotate(10deg)scale(1.1);
+    transition: all 0.4s ease-in-out;
+}
+
+
+.card img{
+    width: 100%;
+}
+
+@keyframes topbar {
+    from{top:-70px;}
+    to{top:0;}
+}
+
+@keyframes body {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.box{
+    margin: 10px;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.box:hover{
+    transform: scale(1.1);
+    top: -10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#hobby img{
+    border-radius: 2vw;
+    width: 23vw;
+    height: 34vw;
+}
+
+.block300px{
+    margin-top: 300px;
+}
+
+
+
+
+
+
